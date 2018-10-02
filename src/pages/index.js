@@ -30,7 +30,7 @@ export default class IndexPage extends Component {
                     <p>Sat, October 12th - 9:00 PM</p>
                   </div>
                   <div>
-                    <h3>Amber Rose's Slut Walk</h3>
+                    <h3>Amber Rose's Walk</h3>
                     <p>Sat, October 12th - 9:00 PM</p>
                   </div>
                 </div>

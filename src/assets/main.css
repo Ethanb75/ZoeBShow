@@ -152,6 +152,7 @@ html, body {
   height: 100vh;
   min-height: 800px;
   position: relative;
+  overflow: hidden;
 }
 
 .title {
@@ -1194,5 +1195,11 @@ main.abt {
   }
   .galleryHeader__title h1 {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title h1 {
+    font-size: 7.53em;
   }
 }

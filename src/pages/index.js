@@ -110,7 +110,7 @@ export default class IndexPage extends Component {
               <div className="hGallery__item"></div>
             </div>
             <div className="hGallery__info">
-              <h3>A great headline</h3>
+              <h3>Humans are sexual creatures</h3>
               <p>Everyone has a naughty side. For Zoe’B., her naughty side comes out to play everyday.
                   Discovering the sexual  anatomy of a man and woman is what turns her on even more.
               </p>

@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "Zoe'B Homepage",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Zoe B Homepage',
+        short_name: "Zoe'B",
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#C63B92',
+        theme_color: '#C63B92',
         display: 'minimal-ui',
         icon: 'src/assets/images/logo.png', // This path is relative to the root of the site.
       },

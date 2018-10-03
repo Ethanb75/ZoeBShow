@@ -36,7 +36,7 @@ let options = {
 export default class Gallery extends Component {
   state = {
     loadedImages: 0,
-    totalImages: images.length,
+    totalImages: 0,
     allImagesLoaded: false
   }
   getThumbnailContent = (item) => {
@@ -46,14 +46,20 @@ export default class Gallery extends Component {
   }
 
   componentDidMount() {
+    let imagesToLoad = document.querySelectorAll('img');
     if (!document.querySelector('.sideBar').classList.contains('lite')) {
       document.querySelector('.sideBar').classList.add('lite');
     }
 
-    document.querySelectorAll('.gallery__img').forEach(el => {
-      el.addEventListener('load', () => {
-        console.log('image loaded');
+    if (this.state.totalImages === 0) {
+      this.setState({ totalImages: imagesToLoad.length });
+    }
+
+    imagesToLoad.forEach(el => {
+      el.addEventListener('load', ev => {
         this.setState({ loadedImages: this.state.loadedImages + 1 });
+        //add the class for smooth load
+        ev.target.classList.add('loaded');
         if (this.state.loadedImages === this.state.totalImages) {
           this.setState({ allImagesLoaded: true });
         }
@@ -66,11 +72,17 @@ export default class Gallery extends Component {
 
   render() {
     const { getThumbnailContent } = this;
-    const { loadedImages, allImagesLoaded } = this.state;
+    const { loadedImages, allImagesLoaded, totalImages } = this.state;
 
     return (
       <Layout>
         <div>
+          <div className={allImagesLoaded ? "loadscreen loaded" : "loadscreen"} style={{ position: 'fixed', width: '100%', height: '100%', left: '0', top: '0', backgroundColor: 'var(--darkGrey)' }}>
+            <span>Loading Gallery...</span>
+            <span>{loadedImages} / {totalImages}</span>
+          </div>
+
+
           <header className="galleryHeader">
             <div className="galleryBack"></div>
             <div className="galleryHeader__title">

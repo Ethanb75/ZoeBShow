@@ -754,12 +754,7 @@ footer {
   -moz-column-gap:      0px;
   column-count:         5;
   column-gap:           0px;
-  opacity: 0;
   transition: all .5s ease;
-}
-
-.gallery.loaded {
-  opacity: 1;
 }
 
 .gallery__item {
@@ -769,6 +764,13 @@ footer {
   width: 60px;
   margin-bottom: 0;
   width: 100%;
+  image-orientation: from-image; 
+  transition: all .2s ease;
+  opacity: 0;
+}
+
+.gallery__img.loaded {
+  opacity: 1;
 }
 
 .gallery__link {
@@ -779,6 +781,30 @@ footer {
 .gallery__link a {
   color: var(--rose);
   text-decoration: none;
+}
+
+.loadscreen {
+  transition: all .5s ease;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadscreen span {
+  color: white;
+}
+
+.loadscreen span:first-of-type {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 3.842em;
+  margin-bottom: 20px;
+}
+
+.loadscreen.loaded {
+  opacity: 0;
+  z-index: -1;
 }
 
 

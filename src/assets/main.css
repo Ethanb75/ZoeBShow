@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland|Open+Sans:300,700,800');
+/* @import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland|Open+Sans:300,700,800'); */
+@import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland|Open+Sans:400,700');
 
 /* 
 base font: 14px
@@ -586,12 +587,17 @@ main {
   margin-bottom: 10px;
 }
 
+.footer__links li a {
+  text-decoration: none;
+  color: white;
+}
+
 footer {
   position: relative;
   z-index: 2;
   display: flex;
   padding: 100px 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: var(--darkGrey);
 }
 
 .footer__copy {
@@ -601,11 +607,15 @@ footer {
   width: 100%;
   text-align: right;
   color: var(--lightGrey);
-  padding: 0 40px 20px 0;
+  padding: 0 0 20px 0;
 }
 
-.footer__copy span:nth-of-type(2) {
+.footer__copy span {
   margin-right: 40px;
+}
+
+.footer__copy span:nth-of-type(1) {
+  cursor: pointer;
 }
 
 .menu {
@@ -1107,6 +1117,14 @@ main.abt {
     padding: 0;
     width: 100%;
   }
+  .footer__copy span {
+    margin: 0;
+  }
+  .footer__copy {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 20px 100px;
+  }
   .sideBar.lite .sideBar__social {
     display: none;
   }
@@ -1125,6 +1143,9 @@ main.abt {
 }
 
 @media screen and (max-width: 450px) {
+  .topBar {
+    padding-right: 20px;
+  }
   .hInfo__media {
     display: none;
   }
@@ -1183,6 +1204,10 @@ main.abt {
   }
   footer {
     padding: 40px;
+    padding-bottom: 80px;
+  }
+  .footer__copy {
+    padding: 0 40px 20px 40px;
   }
   .gallery {
     padding: 0 0 60px 0;

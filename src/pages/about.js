@@ -95,8 +95,8 @@ export default class About extends Component {
             </div>
           </div>
           <div className="footer__copy">
-            <span>Top</span>
-            <span>Copy Zoe B.</span>
+            <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Top</span>
+            <span>© 2017 ZOE'B. ALL RIGHTS RESERVED</span>
           </div>
         </footer>
       </Layout>

@@ -137,10 +137,16 @@ export default class IndexPage extends Component {
             <div>
               <ul>
                 <label>Links</label>
-                <li>Home</li>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                {/* <li>Contact</li> */}
               </ul>
               <ul>
                 <label>social</label>
@@ -151,8 +157,8 @@ export default class IndexPage extends Component {
             </div>
           </div>
           <div className="footer__copy">
-            <span>Top</span>
-            <span>Copy Zoe B.</span>
+            <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Top</span>
+            <span>© 2017 ZOE'B. ALL RIGHTS RESERVED</span>
           </div>
         </footer>
       </Layout>

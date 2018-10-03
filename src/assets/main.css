@@ -754,7 +754,14 @@ footer {
   -moz-column-gap:      0px;
   column-count:         5;
   column-gap:           0px;
+  opacity: 0;
+  transition: all .5s ease;
 }
+
+.gallery.loaded {
+  opacity: 1;
+}
+
 .gallery__item {
   width: 20%;
 }

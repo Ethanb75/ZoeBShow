@@ -34,6 +34,11 @@ let options = {
 
 
 export default class Gallery extends Component {
+  state = {
+    loadedImages: 0,
+    totalImages: images.length,
+    allImagesLoaded: false
+  }
   getThumbnailContent = (item) => {
     return (
       <img src={item.thumbnail} width={120} height={90} alt="" />
@@ -44,6 +49,16 @@ export default class Gallery extends Component {
     if (!document.querySelector('.sideBar').classList.contains('lite')) {
       document.querySelector('.sideBar').classList.add('lite');
     }
+
+    document.querySelectorAll('.gallery__img').forEach(el => {
+      el.addEventListener('loadend', () => {
+        console.log('image loaded');
+        this.setState({ loadedImages: this.state.loadedImages + 1 });
+        if (this.state.loadedImages === this.state.totalImages) {
+          this.setState({ allImagesLoaded: true });
+        }
+      })
+    })
   }
   componentWillUnmount() {
     document.querySelector('.sideBar').classList.remove('lite');
@@ -51,6 +66,7 @@ export default class Gallery extends Component {
 
   render() {
     const { getThumbnailContent } = this;
+    const { loadedImages, allImagesLoaded } = this.state;
 
     return (
       <Layout>
@@ -67,7 +83,7 @@ export default class Gallery extends Component {
             </div>
           </header>
           {/* <PhotoSwipeGallery items={items} options={options} thumbnailContent={getThumbnailContent} /> */}
-          <div className="gallery">
+          <div className={allImagesLoaded ? "gallery loaded" : "gallery"}>
             {images.map((imageUrl, i) => {
               // return (
               //   <img index={i} src={imageUrl} />
@@ -80,6 +96,7 @@ export default class Gallery extends Component {
                     alt: 'Golden Gate Bridge',
                     className: 'gallery__img'
                   }}
+
                   key={i}
                   zoomImage={{
                     src: imageUrl,

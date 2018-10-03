@@ -51,7 +51,7 @@ export default class Gallery extends Component {
     }
 
     document.querySelectorAll('.gallery__img').forEach(el => {
-      el.addEventListener('loadend', () => {
+      el.addEventListener('load', () => {
         console.log('image loaded');
         this.setState({ loadedImages: this.state.loadedImages + 1 });
         if (this.state.loadedImages === this.state.totalImages) {

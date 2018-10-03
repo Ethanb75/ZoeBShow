@@ -45,12 +45,13 @@ fonts:
   display: inline;
 }
 
-.topBar ul li a {
+.topBar ul li a, .topBar ul li:last-of-type {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.833em;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .topBar__logo img {
@@ -640,11 +641,12 @@ footer {
   flex-direction: column;
 }
 
-.menu__links a {
+.menu__links a, .menu__links div {
   text-decoration: none;
   color: whitesmoke;
   transition: all .2s ease;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .menu__links span:first-of-type {
@@ -685,19 +687,19 @@ footer {
   transition: all .2s ease-out;
 }
 
-.menu__links a:hover {
+.menu__links a:hover, .menu__links div:hover {
   color: var(--rose);
 }
 
-.menu__links a:hover span:last-of-type {
+.menu__links a:hover span:last-of-type, .menu__links div:hover span:last-of-type {
   transform: translateX(10px);
 }
 
-.menu__links a:hover span:first-of-type::before {
+.menu__links a:hover span:first-of-type::before, .menu__links div:hover span:first-of-type::before {
   width: 100%;
 }
 
-.menu__links a:hover span:last-of-type::before {
+.menu__links a:hover span:last-of-type::before, .menu__links div:hover span:last-of-type::before {
   width: 40px;
 }
 
@@ -755,13 +757,21 @@ footer {
 }
 .gallery__item {
   width: 20%;
-
 }
 .gallery__img {
   width: 60px;
   margin-bottom: 0;
   width: 100%;
+}
 
+.gallery__link {
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.gallery__link a {
+  color: var(--rose);
+  text-decoration: none;
 }
 
 
@@ -993,6 +1003,9 @@ main.abt {
     column-count:         3;
     padding: 80px;
   }
+  .gallery__link {
+    padding-bottom: 80px;
+  }
   .sideBar.lite .sideBar__social {
     margin-top: 0;
   }
@@ -1128,6 +1141,9 @@ main.abt {
   .gallery {
     padding: 40px;
   }
+  .gallery__link {
+    padding-bottom: 40px;
+  }
   main.abt {
     padding: 0;
   }
@@ -1211,6 +1227,9 @@ main.abt {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+  .gallery__link {
+    padding-bottom: 60px;
   }
   .galleryHeader__title {
     padding: 40px 0;

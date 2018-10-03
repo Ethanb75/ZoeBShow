@@ -42,7 +42,7 @@ export default class Header extends Component {
               <a href="https://www.instagram.com/thezoebshow/">Instagram</a>
             </span>
             <span>
-              <a href="">Twitter</a>
+              <a href="">Facebook</a>
             </span>
           </div>
         </div>
@@ -57,8 +57,11 @@ export default class Header extends Component {
             <li>
               <Link to="/gallery" onClick={() => this.closeNav()}>Media</Link>
             </li>
-            <li>
-              <Link to="/contact" onClick={() => this.closeNav()}>Contact</Link>
+            <li onClick={() => {
+              this.closeNav();
+              window.scrollTo({ top: window.scrollMaxY, behavior: 'smooth' })
+            }}>
+              Contact
             </li>
           </ul>
           <div className="topBar__logo">
@@ -80,10 +83,13 @@ export default class Header extends Component {
               <span>Media</span>
               <span>Browse photo's and video</span>
             </Link>
-            <Link to="/contact" onClick={() => this.closeNav()}>
+            <div onClick={() => {
+              this.closeNav();
+              window.scrollTo({ top: window.scrollMaxY, behavior: 'smooth' })
+            }}>
               <span>Contact</span>
               <span>Contact Zoe'B today</span>
-            </Link>
+            </div>
           </div>
           {/* <div className="menu__social">
             <span>

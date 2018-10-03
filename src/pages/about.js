@@ -75,21 +75,30 @@ export default class About extends Component {
             <div>
               <h3>Contact me</h3>
               <p>
-                Here we have contact information. Bacon ipsum dolor amet alcatra leberkas pork jowl, corned beef swine biltong ham boudin tri-tip capicola meatball burgdoggen.
+                For inquiries, booking information, or to learn more about Zoe'B. Contact Zoe via email or phone. For more content, visit Zoe'B's social media pages.
               </p>
             </div>
             <div>
               <ul>
                 <label>Links</label>
-                <li>Home</li>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/gallery">Gallery</Link>
+                </li>
               </ul>
               <ul>
                 <label>social</label>
-                <li>Instagram</li>
-                <li>Twitter</li>
+                <li>
+                  <a href="https://www.instagram.com/thezoebshow/">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/thezoebshow">Youtube</a>
+                </li>
                 <li>Facebook</li>
               </ul>
             </div>

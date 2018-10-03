@@ -3892,6 +3892,10 @@ gatsby-link@^2.0.0-rc.4:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
+gatsby-plugin-google-fonts@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
+
 gatsby-plugin-manifest@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.3.tgz#25b0e5a882ae8f8687da5104776a82eaa4b10623"

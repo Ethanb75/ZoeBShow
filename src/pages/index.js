@@ -46,7 +46,7 @@ export default class IndexPage extends Component {
                 <div className="mediaWrap">
                   <em>media</em>
                   <p>Check out the latest video from Zoe'B</p>
-                  <a href="youtube.com">Watch the Video &rarr;</a>
+                  <a href="https://www.youtube.com/watch?v=gMk0HACJ6Aw">Watch the Video &rarr;</a>
                 </div>
               </div>
             </div>

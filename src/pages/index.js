@@ -7,7 +7,6 @@ import back from '../assets/images/back1.mp4';
 import thumb from '../assets/images/thumb.jpg';
 import logo from '../assets/images/logo.png';
 
-import '../assets/main.css'
 
 export default class IndexPage extends Component {
   render() {

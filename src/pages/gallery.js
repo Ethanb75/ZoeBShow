@@ -14,7 +14,7 @@ function importAll(r) {
 }
 
 const images = importAll(require.context('../assets/images/gallery', false, /\.(png|jpe?g|svg)$/));
-const thumbs = importAll(require.context('../assets/images/gallery/small', false, /\.(png|jpe?g|svg)$/));
+const thumbs = importAll(require.context('../assets/images/gallery/thumbs', false, /\.(png|jpe?g|svg)$/));
 
 let items = images.map((image, i) => {
   return {

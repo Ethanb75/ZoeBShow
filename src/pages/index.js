@@ -75,7 +75,7 @@ export default class IndexPage extends Component {
                 <p>
                   Freedom of expression and astistry are very important when it comes to connecting
                   with today’s society. With Zoe’ B’s personal celebrity stylist ,D.Styles by her side,
-                  they are able channel the next level of high fashion.
+                  they are able to channel the next level of high fashion.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default class IndexPage extends Component {
                   Everyone has a naughty side. For Zoe’B., her naughty side comes out to play everyday.
                   Discovering the sexual  anatomy of a man and woman is what turns her on even more.
                   <br /><br />
-                  <em>“ The human body has hidden treasures we all maybe never get to open.”</em >~ Zoe’B
+                  <em>“ The human body has hidden treasures we all may never get to open.”</em >~ Zoe’B
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default class IndexPage extends Component {
           <section className="hAbout">
             <div>
               <em>"</em>
-              <p>The human body has hidden treasures we may never get to open.</p>
+              <p>The human body has hidden treasures we all may never get to open.</p>
               {/* <button>About Zoe'B</button> */}
               <div>
                 <Link to="/about">Learn About Zoe’B &rarr;</Link>

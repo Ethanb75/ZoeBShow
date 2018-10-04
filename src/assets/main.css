@@ -764,13 +764,17 @@ footer {
   width: 60px;
   margin-bottom: 0;
   width: 100%;
-  image-orientation: from-image; 
+  image-orientation: from-image;
   transition: all .2s ease;
   opacity: 0;
 }
 
 .gallery__img.loaded {
   opacity: 1;
+}
+
+.gallery__img-zoomed {
+  image-orientation: from-image;
 }
 
 .gallery__link {

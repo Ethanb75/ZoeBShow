@@ -14,7 +14,7 @@ function importAll(r) {
 }
 
 const images = importAll(require.context('../assets/images/gallery', false, /\.(png|jpe?g|svg)$/));
-// const thumbs = importAll(require.context('../assets/images/thumbs', false, /\.(png|jpe?g|svg)$/));
+const thumbs = importAll(require.context('../assets/images/gallery/small', false, /\.(png|jpe?g|svg)$/));
 
 let items = images.map((image, i) => {
   return {
@@ -97,22 +97,23 @@ export default class Gallery extends Component {
           {/* <PhotoSwipeGallery items={items} options={options} thumbnailContent={getThumbnailContent} /> */}
           <div className={allImagesLoaded ? "gallery loaded" : "gallery"}>
             {images.map((imageUrl, i) => {
-              // return (
-              //   <img index={i} src={imageUrl} />
-              // )
+
+              console.log(imageUrl);
               return (
                 // <div className="gallery__item" key={i}>
                 <ImageZoom
                   image={{
-                    src: imageUrl,
+                    src: thumbs[i],
                     alt: 'Golden Gate Bridge',
                     className: 'gallery__img'
                   }}
-
+                  // style={{ imageOrientation: 'from-image' }}
+                  style="image-orientation: from-image"
                   key={i}
                   zoomImage={{
                     src: imageUrl,
-                    alt: 'Golden Gate Bridge'
+                    alt: 'Golden Gate Bridge',
+                    className: 'gallery__img-zoomed'
                   }}
                 />
                 // </div>

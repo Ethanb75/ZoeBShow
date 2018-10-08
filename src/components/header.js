@@ -87,23 +87,13 @@ export default class Header extends Component {
             </Link>
             <div onClick={() => {
               this.closeNav();
-              window.scrollTo({ top: window.scrollMaxY, behavior: 'smooth' })
+              // window.scrollTo({ top: window.scrollMaxY, behavior: 'smooth' })
+              document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
             }}>
               <span>Contact</span>
               <span>Contact Zoe'B today</span>
             </div>
           </div>
-          {/* <div className="menu__social">
-            <span>
-              <a href="https://www.youtube.com/user/thezoebshow">Youtube</a>
-            </span>
-            <span>
-              <a href="https://www.instagram.com/thezoebshow/">Instagram</a>
-            </span>
-            <span>
-              <a href="">Twitter</a>
-            </span>
-          </div> */}
           <div className="menu__yt"></div>
         </div>
       </nav>

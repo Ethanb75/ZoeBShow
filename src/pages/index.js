@@ -26,12 +26,14 @@ export default class IndexPage extends Component {
               <div className="events">
                 <div className="events__feed">
                   <div>
-                    <h3>Feed the Hungry</h3>
-                    <p>Sat, October 12th - 9:00 PM</p>
+                    <h3>Feed the Homeless</h3>
+                    <em>little five points, ATL</em>
+                    <p>Oct. 14th, 28th ~ 8:00 AM-12:00 PM</p>
                   </div>
                   <div>
-                    <h3>Amber Rose's Walk</h3>
-                    <p>Sat, October 12th - 9:00 PM</p>
+                    <h3>Give Back Thanksgiving</h3>
+                    <em>TBA</em>
+                    <p>Nov. 11th, 25th ~ 8:00 AM-12:00 PM</p>
                   </div>
                 </div>
               </div>

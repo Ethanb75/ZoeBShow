@@ -38,14 +38,17 @@ export default class Header extends Component {
           </div>
           <div className="sideBar__social">
             <span>
-              <a href="https://www.youtube.com/user/thezoebshow">Youtube</a>
+              <a href="https://twitter.com/TheZoeBShow">Twitter</a>
             </span>
             <span>
               <a href="https://www.instagram.com/thezoebshow/">Instagram</a>
             </span>
             <span>
-              <a href="">Facebook</a>
+              <a href="https://www.facebook.com/TheZoeBShow/">Facebook</a>
             </span>
+            {/* <span>
+              <a href="https://twitter.com/TheZoeBShow">Twitter</a>
+            </span> */}
           </div>
         </div>
         <div className="topBar">
@@ -61,7 +64,8 @@ export default class Header extends Component {
             </li>
             <li onClick={() => {
               this.closeNav();
-              window.scrollTo({ top: window.scrollMaxY, behavior: 'smooth' })
+              // window.scrollTo({ top: window.scrollMaxY, behavior: 'smooth' })
+              document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
             }}>
               Contact
             </li>

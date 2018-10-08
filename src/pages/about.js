@@ -46,7 +46,7 @@ export default class About extends Component {
                 Zoe’B. has her bachelor’s degree in Mass Communications( Performance) with a minor in Business Management. Zoe'B. Is also a member of Delta Sigma Theta Sorority Inc.
                 Zoe’B. re-invented The Zoe’B. Show into the Zoe’B.Show “After Dark” shortly after moving to Atlanta Georgia in 2015.
                 Since airing the show through World Star Hit Radio, Zoe’B. has increased her buzz around Georgia and beyond from interviewing various celebirties and fans to appearing on other web blogs and podcast shows herself.
-                Recently , Zoe’B. has teamed up with Hosea Feed The Homeless twice a month to provide food, water , hygiene packages , care bags,and more to help make a difference and to also let the surrounding communities know that it’s never too late to make a change .
+                Recently, Zoe’B. has teamed up with Hosea Feed The Homeless twice a month to provide food, water, hygiene packages, care bags, and more to help make a difference and to also let the surrounding communities know that it’s never too late to make a change .
                 With 2019 around the corner, Zoe’B. have upcoming releases such as ZBsecrets and Red Emojis.
               </p>
             </div>

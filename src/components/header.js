@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import logo from '../assets/images/logo.png';
+
 
 export default class Header extends Component {
   state = {
@@ -16,7 +18,7 @@ export default class Header extends Component {
     this.setState({ isNavOpen: false });
   }
   componentDidMount() {
-
+    smoothscroll.polyfill();
   }
   render() {
 

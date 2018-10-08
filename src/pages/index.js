@@ -123,8 +123,8 @@ export default class IndexPage extends Component {
           <div className="footer__flair"></div>
           <div className="footer__logo">
             <img src={logo} />
-            <a href="">(678) 111-1111</a>
-            <a href="mailto:contact@email.com">contact@zoebtvshow.com</a>
+            <a href="">404.771.0112</a>
+            <a href="mailto:thezoebshow@gmail.com">thezoebshow@gmail.com</a>
           </div>
           <div className="footer__links">
             <div>
@@ -155,7 +155,12 @@ export default class IndexPage extends Component {
                 <li>
                   <a href="https://www.youtube.com/user/thezoebshow">Youtube</a>
                 </li>
-                <li>Facebook</li>
+                <li>
+                  <a href="https://www.facebook.com/TheZoeBShow/">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TheZoeBShow">Twitter</a>
+                </li>
               </ul>
             </div>
           </div>

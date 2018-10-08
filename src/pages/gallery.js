@@ -65,6 +65,11 @@ export default class Gallery extends Component {
         }
       })
     })
+
+    //after 10 seconds if no changes, 
+    setTimeout(() => {
+      this.setState({ allImagesLoaded: true });
+    }, 10000);
   }
   componentWillUnmount() {
     document.querySelector('.sideBar').classList.remove('lite');

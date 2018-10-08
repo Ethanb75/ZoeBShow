@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.png';
 
 import Layout from '../components/layout';
 
-import abt1 from '../assets/images/abt.jpg';
+import abt1 from '../assets/images/abt-small.jpg';
 
 
 export default class About extends Component {

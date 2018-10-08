@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import back from '../assets/images/back1.mp4';
 import thumb from '../assets/images/thumb.jpg';
 import logo from '../assets/images/logo.png';
+import poster from '../assets/images/poster.png';
 
 
 export default class IndexPage extends Component {
@@ -52,7 +53,7 @@ export default class IndexPage extends Component {
             </div>
           </div>
           <div className="videoBackground">
-            <video src={back} autoPlay muted loop />
+            <video src={back} poster={poster} autoPlay muted loop />
           </div>
         </header>
         <main>
@@ -96,7 +97,6 @@ export default class IndexPage extends Component {
             <div>
               <em>"</em>
               <p>The human body has hidden treasures we all may never get to open.</p>
-              {/* <button>About Zoe'B</button> */}
               <div>
                 <Link to="/about">Learn About Zoe’B &rarr;</Link>
               </div>

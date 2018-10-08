@@ -6,6 +6,7 @@ import logo from '../assets/images/logo.png';
 import Layout from '../components/layout';
 
 import abt1 from '../assets/images/abt-small.jpg';
+import ent from '../assets/images/entrepreneur2.jpeg';
 
 
 export default class About extends Component {
@@ -54,14 +55,14 @@ export default class About extends Component {
               <img src={abt1} />
             </div>
           </div>
+          {/* <div className="abtRow">
+            <img src={abt1} />
+            <img src={ent} />
+            <img src={abt1} />
+            <img src={abt1} />
+          </div> */}
           <div className="abtRow">
-            <img src={abt1} />
-            <img src={abt1} />
-            <img src={abt1} />
-            <img src={abt1} />
-          </div>
-          <div className="abtRow">
-            <Link to="/gallery">Check out the full Gallery &rarr;</Link>
+            <Link to="/gallery">Check out the Gallery &rarr;</Link>
           </div>
         </main>
         <footer>

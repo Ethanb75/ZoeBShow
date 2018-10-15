@@ -125,7 +125,7 @@ export default class IndexPage extends Component {
           <div className="footer__flair"></div>
           <div className="footer__logo">
             <img src={logo} />
-            <a href="">404.771.0112</a>
+            <a href="tel:+4047710112">404.771.0112</a>
             <a href="mailto:thezoebshow@gmail.com">thezoebshow@gmail.com</a>
           </div>
           <div className="footer__links">

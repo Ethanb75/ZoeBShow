@@ -1289,6 +1289,12 @@ main.abt {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .title h1 {
+    font-size: 8.916em;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .title h1 {
     font-size: 7.53em;

@@ -126,14 +126,14 @@ export default class Gallery extends Component {
             })}
           </div>
           <div className="gallery__link">
-            <a href="">Check out Zoe's Instagram for more &rarr;</a>
+            <a href="https://www.instagram.com/thezoebshow/">Check out Zoe's Instagram for more &rarr;</a>
           </div>
         </div>
         <footer>
           <div className="footer__flair"></div>
           <div className="footer__logo">
             <img src={logo} />
-            <a href="">404.771.0112</a>
+            <a href="tel:+4047710112">404.771.0112</a>
             <a href="mailto:thezoebshow@gmail.com">thezoebshow@gmail.com</a>
           </div>
           <div className="footer__links">
